@@ -1,0 +1,116 @@
+body {
+    background-image: url('https://startmarriageright.s3.amazonaws.com/uploads/2015/03/web-30850535_ml.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 100%;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #2d3e50;
+    padding: 10px 30px;
+}
+
+.navbar .logo {
+    font-size: 1.5em;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.navbar .nav-links {
+    display: flex;
+    gap: 30px;
+}
+
+.navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1em;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+
+.navbar .nav-links a:hover {
+    color: #45da5d;
+}
+
+.navbar .search-bar {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.navbar input[type="text"] {
+    padding: 5px 10px;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+}
+
+.navbar button {
+    padding: 5px 10px;
+    border: none;
+    border-radius: 3px;
+    background-color: #45da5d;
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.navbar button[type="button"] {
+    background-color: #10acdb;
+}
+
+@media (max-width: 700px) {
+    .navbar {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .navbar .nav-links {
+        justify-content: center;
+    }
+
+    .navbar .search-bar {
+        justify-content: flex-end;
+    }
+}
+
+.hero {
+    height: 100%;
+    width: 40%;
+    display: block; 
+    padding: 20px;
+    margin: 10% 7% 0%;
+    background: rgb(16,172,219,0.5);
+}
+
+h1 {
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: capitalize;
+}
+
+h2 {
+    color: #fff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight:100;
+}
+
+button {
+    background-color: #45da5d;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
