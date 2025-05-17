@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Travelers</title>
+    <link rel="stylesheet" href="travel_recommendation.css">
+</head>
+<body>
+    <body>
+        <nav class="navbar">
+            <!-- Logo on the left -->
+            <a href="index.html" class="logo">Travelers</a>
+    
+            <!-- Navigation links in the center -->
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+    
+            <!-- Search bar on the right -->
+            <form class="search-bar" id="searchForm" onsubmit="event.preventDefault(); /* Add search logic here */">
+                <input type="text" id="searchInput" placeholder="Search recommendations">
+                <button type="submit">Search</button>
+                <button type="button" onclick="resetSearch()">Reset</button>
+            </form>
+        </nav>
+
+       <div class="hero_contact">
+        <section class="contact-section">
+            <h2>Contact Us</h2>
+            <form class="contact-form" action="#" method="post">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required>
+          
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required>
+          
+              <label for="subject">Subject:</label>
+              <input type="text" id="subject" name="subject" required>
+          
+              <label for="message">Message:</label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+          
+              <button type="submit">Submit</button>
+            </form>
+          </section>
+    </div>
+
+  
+
+        <script>
+            function resetSearch() {
+                document.getElementById('searchInput').value = '';
+                // Add code here to clear search results if needed
+            }
+        </script>
+    </body>
+    </html>

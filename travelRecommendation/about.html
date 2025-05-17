@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Travelers</title>
+    <link rel="stylesheet" href="travel_recommendation.css">
+</head>
+<body>
+    <body>
+        <nav class="navbar">
+            <!-- Logo on the left -->
+            <a href="index.html" class="logo">Travelers</a>
+    
+            <!-- Navigation links in the center -->
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="contact.html">Contact Us</a>
+            </div>
+    
+            <!-- Search bar on the right -->
+            <form class="search-bar" id="searchForm" onsubmit="event.preventDefault(); /* Add search logic here */">
+                <input type="text" id="searchInput" placeholder="Search recommendations">
+                <button type="submit">Search</button>
+                <button type="button" onclick="resetSearch()">Reset</button>
+            </form>
+        </nav>
+
+       <div class="hero_about">
+         <h1>About Us</h1>
+        <h2><p>At Travelers, we believe that every journey begins with the perfect place to stay. Founded with a passion for exploration and a commitment to exceptional service, we specialize in booking travel accommodations that suit every traveler’s unique needs and preferences. Whether you’re seeking cozy boutique hotels, luxurious resorts, or budget-friendly stays, our expert team is dedicated to making your travel planning seamless and stress-free.</p>
+
+            <p>With years of experience in the travel industry, Travelers combines cutting-edge technology with personalized support to connect you with the best accommodations worldwide. Our mission is to inspire your adventures by offering trusted options, unbeatable deals, and a hassle-free booking experience - so you can focus on what truly matters: creating unforgettable memories.</p>
+            
+                <p>Join thousands of satisfied travelers who trust Travelers to turn their travel dreams into reality. Wherever your next destination, we’re here to help you find the perfect place to call home away from home.</p></h2>
+  
+  
+                <section class="our-team">
+        <div class="team-container">
+          <!-- First column: Main header -->
+          <div class="team-col team-header">
+            <h2>Our Team</h2>
+          </div>
+          <!-- Next three columns: Team members -->
+          <div class="team-col">
+            <h4>Jane Doe</h4>
+            <p>Lead Travel Consultant with a passion for discovering hidden gems around the world.</p>
+          </div>
+          <div class="team-col">
+            <h4>John Smith</h4>
+            <p>Customer Experience Manager ensuring every trip is smooth and memorable.</p>
+          </div>
+          <div class="team-col">
+            <h4>Emily Lee</h4>
+            <p>Accommodation Specialist who finds the perfect stay for every traveler.</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+  
+
+        <script>
+            function resetSearch() {
+                document.getElementById('searchInput').value = '';
+                // Add code here to clear search results if needed
+            }
+        </script>
+    </body>
+    </html>
